@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
   },
   textHeader: {
     fontWeight: 'bold',
+    marginTop: 10,
   },
   dot2: {
     color: '#fff',
@@ -122,6 +123,9 @@ const styles = StyleSheet.create({
   textSub: {
     fontFamily: 'Ubuntu',
     fontSize: 20,
+    marginTop: 15,
+    marginBottom: 10,
+
     color: '#fff',
     fontWeight: 'bold',
   },
@@ -137,8 +141,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: -170,
 
-    left: -10,
-    right: -10,
+    left: -20,
+    right: -20,
 
     width: '100%',
   },
