@@ -1,12 +1,24 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import GreeterApp from './Onboarding/greetApp';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
 const App = () => {
+  const theme = {
+    ...DefaultTheme,
+    roundness: 2,
+    colors: {
+      ...DefaultTheme.colors,
+      primary: '#3498db',
+      accent: '#f1c40f',
+    },
+  };
+
   return (
-    <NavigationContainer>
-      <GreeterApp />
-    </NavigationContainer>
+    <PaperProvider theme={theme}>
+      <NavigationContainer>
+        <GreeterApp />
+      </NavigationContainer>
+    </PaperProvider>
   );
 };
 

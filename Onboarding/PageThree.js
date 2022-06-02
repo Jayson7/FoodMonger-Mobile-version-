@@ -32,25 +32,25 @@ const PageThree = ({navigation}) => {
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.content}>
         <View style={styles.imageContainer}>
-          <Image source={require('../images/page1.jpg')} style={styles.image} />{' '}
-        </View>{' '}
+          <Image source={require('../images/page3.jpg')} style={styles.image} />
+        </View>
         <View style={styles.textContainer}>
           <Text style={styles.textHeader}>
-            <Text style={styles.dot1}> Food </Text>{' '}
-            <Text style={styles.dot2}> Mon </Text>{' '}
-            <Text style={styles.dot3}> Ger </Text>{' '}
-          </Text>{' '}
-          <Text style={styles.textSub}> A stage that keeps you first </Text>{' '}
+            <Text style={styles.dot1}>Food</Text>
+            <Text style={styles.dot2}>Mon</Text>
+            <Text style={styles.dot3}>Ger</Text>
+          </Text>
+          <Text style={styles.textSub}> Let us run the errand for you</Text>
           <Text style={styles.textSubMini}>
-            We deal in highly nurtured and clean mediums{' '}
-          </Text>{' '}
-        </View>{' '}
+            A delivery suited to perfection just for you and you alone
+          </Text>
+        </View>
         <Icon
           name="long-arrow-right"
           size={50}
           color="#F3DE21"
           style={styles.icon}
-        />{' '}
+        />
         <View style={styles.checkButtons}>
           <RadioButton
             value="first"
@@ -73,11 +73,11 @@ const PageThree = ({navigation}) => {
             uncheckedColor="#fff"
             color="#5B37E9"
           />
-        </View>{' '}
-      </View>{' '}
+        </View>
+      </View>
       <View style={styles.imageFooter}>
-        <Image source={require('../images/F1.png')} style={styles.imageRec1} />{' '}
-      </View>{' '}
+        <Image source={require('../images/F3.png')} style={styles.imageRec1} />
+      </View>
     </View>
   );
 };
@@ -153,10 +153,10 @@ const styles = StyleSheet.create({
   },
   imageFooter: {
     position: 'absolute',
-    bottom: -170,
+    bottom: -200,
 
-    left: -20,
-    right: -20,
+    left: -70,
+    right: -30,
 
     width: '100%',
   },

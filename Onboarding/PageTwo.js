@@ -76,7 +76,7 @@ const PageTwo = ({navigation}) => {
         </View>
       </View>
       <View style={styles.imageFooter}>
-        <Image source={require('../images/F1.png')} style={styles.imageRec1} />
+        <Image source={require('../images/F2.png')} style={styles.imageRec1} />
       </View>
     </View>
   );
@@ -153,10 +153,10 @@ const styles = StyleSheet.create({
   },
   imageFooter: {
     position: 'absolute',
-    bottom: -170,
+    bottom: -190,
 
-    left: -20,
-    right: -20,
+    left: -60,
+    right: -10,
 
     width: '100%',
   },
