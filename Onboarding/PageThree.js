@@ -9,10 +9,11 @@ import {
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {RadioButton} from 'react-native-paper';
-const PageOne = ({navigation}) => {
-  const [checked, setChecked] = React.useState('first');
-  if (checked !== 'first') {
-    setChecked('first');
+const PageThree = ({navigation}) => {
+  const [checked, setChecked] = React.useState('third');
+
+  if (checked !== 'third') {
+    setChecked('third');
   }
   const Button2 = () => {
     setChecked('second');
@@ -31,26 +32,25 @@ const PageOne = ({navigation}) => {
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.content}>
         <View style={styles.imageContainer}>
-          <Image source={require('../images/page1.jpg')} style={styles.image} />
-        </View>
+          <Image source={require('../images/page1.jpg')} style={styles.image} />{' '}
+        </View>{' '}
         <View style={styles.textContainer}>
           <Text style={styles.textHeader}>
-            <Text style={styles.dot1}> Food</Text>
-            <Text style={styles.dot2}>Mon</Text>
-            <Text style={styles.dot3}>Ger</Text>
-          </Text>
-          <Text style={styles.textSub}>A table that satisfies your belly</Text>
+            <Text style={styles.dot1}> Food </Text>{' '}
+            <Text style={styles.dot2}> Mon </Text>{' '}
+            <Text style={styles.dot3}> Ger </Text>{' '}
+          </Text>{' '}
+          <Text style={styles.textSub}> A stage that keeps you first </Text>{' '}
           <Text style={styles.textSubMini}>
-            Get meals ordered ro you at the right time when needed.
-          </Text>
-        </View>
+            We deal in highly nurtured and clean mediums{' '}
+          </Text>{' '}
+        </View>{' '}
         <Icon
           name="long-arrow-right"
           size={50}
           color="#F3DE21"
           style={styles.icon}
-        />
-
+        />{' '}
         <View style={styles.checkButtons}>
           <RadioButton
             value="first"
@@ -73,11 +73,11 @@ const PageOne = ({navigation}) => {
             uncheckedColor="#fff"
             color="#5B37E9"
           />
-        </View>
-      </View>
+        </View>{' '}
+      </View>{' '}
       <View style={styles.imageFooter}>
-        <Image source={require('../images/F1.png')} style={styles.imageRec1} />
-      </View>
+        <Image source={require('../images/F1.png')} style={styles.imageRec1} />{' '}
+      </View>{' '}
     </View>
   );
 };
@@ -162,6 +162,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PageOne;
+export default PageThree;
 
 // const styles = StyleSheet.create({});

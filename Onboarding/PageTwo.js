@@ -11,62 +11,73 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {RadioButton} from 'react-native-paper';
 const PageTwo = ({navigation}) => {
   const [checked, setChecked] = React.useState('second');
+
+  if (checked !== 'second') {
+    setChecked('second');
+  }
+  const Button2 = () => {
+    setChecked('second');
+    navigation.navigate('Pagetwo');
+  };
+  const Button1 = () => {
+    setChecked('first');
+    navigation.navigate('Pageone');
+  };
+  const Button3 = () => {
+    setChecked('three');
+    navigation.navigate('Pagethree');
+  };
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.content}>
         <View style={styles.imageContainer}>
-          <Image source={require('../images/page1.jpg')} style={styles.image} />{' '}
-        </View>{' '}
+          <Image source={require('../images/page2.jpg')} style={styles.image} />
+        </View>
         <View style={styles.textContainer}>
           <Text style={styles.textHeader}>
-            <Text style={styles.dot1}> Food </Text>{' '}
-            <Text style={styles.dot2}> Mon </Text>{' '}
-            <Text style={styles.dot3}> Ger </Text>{' '}
-          </Text>{' '}
-          <Text style={styles.textSub}>
-            {' '}
-            A table that satisfies your belly{' '}
-          </Text>{' '}
+            <Text style={styles.dot1}>Food</Text>
+            <Text style={styles.dot2}>Mon</Text>
+            <Text style={styles.dot3}>Ger</Text>
+          </Text>
+          <Text style={styles.textSub}> A stage that keeps you first </Text>
           <Text style={styles.textSubMini}>
-            Get meals ordered ro you at the right time when needed.{' '}
-          </Text>{' '}
-        </View>{' '}
+            We deal in highly nurtured and clean mediums
+          </Text>
+        </View>
         <Icon
           name="long-arrow-right"
           size={50}
           color="#F3DE21"
           style={styles.icon}
-        />{' '}
-        {/* check buttons */}{' '}
+        />
         <View style={styles.checkButtons}>
           <RadioButton
             value="first"
             status={checked === 'first' ? 'checked' : 'unchecked'}
-            onPress={() => setChecked('first')}
+            onPress={Button1}
             uncheckedColor="#fff"
             color="#5B37E9"
           />
           <RadioButton
             value="second"
             status={checked === 'second' ? 'checked' : 'unchecked'}
-            onPress={() => setChecked('second')}
+            onPress={Button2}
             uncheckedColor="#fff"
             color="#5B37E9"
           />
           <RadioButton
             value="third"
             status={checked === 'third' ? 'checked' : 'unchecked'}
-            onPress={() => setChecked('third')}
+            onPress={Button3}
             uncheckedColor="#fff"
             color="#5B37E9"
           />
-        </View>{' '}
-        {/* check buttons ends here */}{' '}
-      </View>{' '}
+        </View>
+      </View>
       <View style={styles.imageFooter}>
-        <Image source={require('../images/F1.png')} style={styles.imageRec1} />{' '}
-      </View>{' '}
+        <Image source={require('../images/F1.png')} style={styles.imageRec1} />
+      </View>
     </View>
   );
 };
