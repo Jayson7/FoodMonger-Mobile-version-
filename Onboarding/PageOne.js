@@ -39,13 +39,11 @@ const PageOne = ({navigation}) => {
 };
 const styles = StyleSheet.create({
   containers: {
-    flex: 1,
+    // flex: 1,
     backgroundColor: '#1F453C',
-    alignItems: 'center',
-    // justifyContent: 'space-evenly',
+    // alignItems: 'center',
     height: '100%',
-    width: '100%',
-    position: 'relative',
+    overflow: 'hidden',
   },
   imageContainers: {
     alignItems: 'center',
@@ -103,10 +101,9 @@ const styles = StyleSheet.create({
   },
   imageFooters: {
     position: 'absolute',
-    bottom: 0,
-    left: 0,
+    bottom: -150,
 
-    width: '100%',
+    left: -10,
   },
 });
 

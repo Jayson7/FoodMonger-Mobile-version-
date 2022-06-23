@@ -8,7 +8,11 @@ import Swiper from 'react-native-swiper';
 
 const GreeterApp = () => {
   return (
-    <Swiper style={styles.swiper} showsButtons={false}>
+    <Swiper
+      showsButtons={false}
+      autoplay={true}
+      dotColor={'green'}
+      autoplayTimeout={5.0}>
       <View>
         <PageOne />
       </View>
@@ -22,9 +26,5 @@ const GreeterApp = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  swiper: {
-    backgroundColor: '#1F453C',
-  },
-});
+const styles = StyleSheet.create({});
 export default GreeterApp;
