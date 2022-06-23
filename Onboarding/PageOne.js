@@ -103,10 +103,8 @@ const styles = StyleSheet.create({
   },
   imageFooters: {
     position: 'absolute',
-    bottom: -170,
-
-    left: -20,
-    right: -20,
+    bottom: 0,
+    left: 0,
 
     width: '100%',
   },

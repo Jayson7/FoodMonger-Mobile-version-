@@ -24,13 +24,7 @@ const GreeterApp = () => {
 
 const styles = StyleSheet.create({
   swiper: {
-    flex: 1,
     backgroundColor: '#1F453C',
-    alignItems: 'center',
-    // justifyContent: 'space-evenly',
-    height: '100%',
-    width: '100%',
-    position: 'relative',
   },
 });
 export default GreeterApp;
