@@ -16,7 +16,7 @@ const PageOne = ({navigation}) => {
   }
   const Button2 = () => {
     setChecked('second');
-    navigation.navigate('Pagetwo');
+    navigation.push('Pagetwo');
   };
   const Button1 = () => {
     setChecked('first');
@@ -27,7 +27,7 @@ const PageOne = ({navigation}) => {
     navigation.navigate('Pagethree');
   };
   return (
-    <View style={styles.container}>
+    <View style={styles.containers}>
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.content}>
         <View style={styles.imageContainer}>
@@ -50,30 +50,6 @@ const PageOne = ({navigation}) => {
           color="#F3DE21"
           style={styles.icon}
         />
-
-        <View style={styles.checkButtons}>
-          <RadioButton
-            value="first"
-            status={checked === 'first' ? 'checked' : 'unchecked'}
-            onPress={Button1}
-            uncheckedColor="#fff"
-            color="#5B37E9"
-          />
-          <RadioButton
-            value="second"
-            status={checked === 'second' ? 'checked' : 'unchecked'}
-            onPress={Button2}
-            uncheckedColor="#fff"
-            color="#5B37E9"
-          />
-          <RadioButton
-            value="third"
-            status={checked === 'third' ? 'checked' : 'unchecked'}
-            onPress={Button3}
-            uncheckedColor="#fff"
-            color="#5B37E9"
-          />
-        </View>
       </View>
       <View style={styles.imageFooter}>
         <Image source={require('../images/F1.png')} style={styles.imageRec1} />
@@ -82,7 +58,7 @@ const PageOne = ({navigation}) => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
+  containers: {
     flex: 1,
     backgroundColor: '#1F453C',
     alignItems: 'center',
