@@ -4,10 +4,10 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 // import {RadioButton} from 'react-native-paper';
 const PageTwo = ({navigation}) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.containers}>
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
-      <View style={styles.content}>
-        <View style={styles.imageContainer}>
+      <View style={styles.contents}>
+        <View style={styles.imageContainers}>
           <Image source={require('../images/page2.jpg')} style={styles.image} />
         </View>
         <View style={styles.textContainer}>
@@ -35,14 +35,12 @@ const PageTwo = ({navigation}) => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  containers: {
+    // flex: 1,
     backgroundColor: '#1F453C',
-    alignItems: 'center',
-    // justifyContent: 'space-evenly',
+    // alignItems: 'center',
     height: '100%',
-    width: '100%',
-    position: 'relative',
+    overflow: 'hidden',
   },
   imageContainer: {
     alignItems: 'center',
