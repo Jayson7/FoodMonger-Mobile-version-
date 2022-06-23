@@ -1,32 +1,8 @@
-import {
-  StyleSheet,
-  StatusBar,
-  Image,
-  TextInput,
-  Text,
-  View,
-} from 'react-native';
+import {StyleSheet, StatusBar, Image, Text, View} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {RadioButton} from 'react-native-paper';
+// import {RadioButton} from 'react-native-paper';
 const PageThree = ({navigation}) => {
-  const [checked, setChecked] = React.useState('third');
-
-  if (checked !== 'third') {
-    setChecked('third');
-  }
-  const Button2 = () => {
-    setChecked('second');
-    navigation.navigate('Pagetwo');
-  };
-  const Button1 = () => {
-    setChecked('first');
-    navigation.navigate('Pageone');
-  };
-  const Button3 = () => {
-    setChecked('three');
-    navigation.navigate('Pagethree');
-  };
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
@@ -51,29 +27,6 @@ const PageThree = ({navigation}) => {
           color="#F3DE21"
           style={styles.icon}
         />
-        <View style={styles.checkButtons}>
-          <RadioButton
-            value="first"
-            status={checked === 'first' ? 'checked' : 'unchecked'}
-            onPress={Button1}
-            uncheckedColor="#fff"
-            color="#5B37E9"
-          />
-          <RadioButton
-            value="second"
-            status={checked === 'second' ? 'checked' : 'unchecked'}
-            onPress={Button2}
-            uncheckedColor="#fff"
-            color="#5B37E9"
-          />
-          <RadioButton
-            value="third"
-            status={checked === 'third' ? 'checked' : 'unchecked'}
-            onPress={Button3}
-            uncheckedColor="#fff"
-            color="#5B37E9"
-          />
-        </View>
       </View>
       <View style={styles.imageFooter}>
         <Image source={require('../images/F3.png')} style={styles.imageRec1} />

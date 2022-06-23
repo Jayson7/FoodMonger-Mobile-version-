@@ -1,40 +1,20 @@
-import {
-  StyleSheet,
-  StatusBar,
-  Image,
-  TextInput,
-  Text,
-  View,
-} from 'react-native';
+import {StyleSheet, StatusBar, Image, Text, View} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {RadioButton} from 'react-native-paper';
+// import {RadioButton} from 'react-native-paper';
 const PageOne = ({navigation}) => {
-  const [checked, setChecked] = React.useState('first');
-  if (checked !== 'first') {
-    setChecked('first');
-  }
-  const Button2 = () => {
-    setChecked('second');
-    navigation.push('Pagetwo');
-  };
-  const Button1 = () => {
-    setChecked('first');
-    navigation.navigate('Pageone');
-  };
-  const Button3 = () => {
-    setChecked('three');
-    navigation.navigate('Pagethree');
-  };
   return (
     <View style={styles.containers}>
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
-      <View style={styles.content}>
-        <View style={styles.imageContainer}>
-          <Image source={require('../images/page1.jpg')} style={styles.image} />
+      <View style={styles.contents}>
+        <View style={styles.imageContainers}>
+          <Image
+            source={require('../images/page1.jpg')}
+            style={styles.images}
+          />
         </View>
-        <View style={styles.textContainer}>
-          <Text style={styles.textHeader}>
+        <View style={styles.textContainers}>
+          <Text style={styles.textHeaders}>
             <Text style={styles.dot1}> Food</Text>
             <Text style={styles.dot2}>Mon</Text>
             <Text style={styles.dot3}>Ger</Text>
@@ -51,7 +31,7 @@ const PageOne = ({navigation}) => {
           style={styles.icon}
         />
       </View>
-      <View style={styles.imageFooter}>
+      <View style={styles.imageFooters}>
         <Image source={require('../images/F1.png')} style={styles.imageRec1} />
       </View>
     </View>
@@ -67,38 +47,32 @@ const styles = StyleSheet.create({
     width: '100%',
     position: 'relative',
   },
-  imageContainer: {
+  imageContainers: {
     alignItems: 'center',
     borderRadius: 10,
     marginTop: '20%',
   },
-  image: {
+  images: {
     width: 350,
     height: 230,
     borderRadius: 10,
   },
-  textContainer: {
+  textContainers: {
     alignItems: 'center',
   },
 
-  content: {
+  contents: {
     height: 600,
     alignItems: 'center',
 
     justifyContent: 'space-evenly',
   },
-  checkButtons: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
-  icon: {
-    width: '100%',
-  },
+
   dot1: {
     color: '#F3DE21',
     fontSize: 60,
   },
-  textHeader: {
+  textHeaders: {
     fontWeight: 'bold',
     marginTop: 10,
   },
@@ -127,7 +101,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     textAlign: 'center',
   },
-  imageFooter: {
+  imageFooters: {
     position: 'absolute',
     bottom: -170,
 

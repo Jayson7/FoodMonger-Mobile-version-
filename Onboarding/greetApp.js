@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {View} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import PageOne from './PageOne';
 import PageTwo from './PageTwo';
 import PageThree from './PageThree';
@@ -8,7 +8,7 @@ import Swiper from 'react-native-swiper';
 
 const GreeterApp = () => {
   return (
-    <Swiper showsButtons={true}>
+    <Swiper style={styles.swiper} showsButtons={false}>
       <View>
         <PageOne />
       </View>
@@ -22,4 +22,15 @@ const GreeterApp = () => {
   );
 };
 
+const styles = StyleSheet.create({
+  swiper: {
+    flex: 1,
+    backgroundColor: '#1F453C',
+    alignItems: 'center',
+    // justifyContent: 'space-evenly',
+    height: '100%',
+    width: '100%',
+    position: 'relative',
+  },
+});
 export default GreeterApp;
