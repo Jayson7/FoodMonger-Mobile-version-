@@ -40,8 +40,8 @@ const PageOne = ({navigation}) => {
 const styles = StyleSheet.create({
   containers: {
     // flex: 1,
-    backgroundColor: '#1F453C',
-    // alignItems: 'center',
+    backgroundColor: '#17342d',
+    alignItems: 'center',
     height: '100%',
     overflow: 'hidden',
   },

@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 // import {RadioButton} from 'react-native-paper';
 const PageThree = ({navigation}) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.containers}>
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.content}>
         <View style={styles.imageContainer}>
@@ -35,14 +35,11 @@ const PageThree = ({navigation}) => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#1F453C',
+  containers: {
+    backgroundColor: '#0b1e1a',
     alignItems: 'center',
-    // justifyContent: 'space-evenly',
+    overflow: 'hidden',
     height: '100%',
-    width: '100%',
-    position: 'relative',
   },
   imageContainer: {
     alignItems: 'center',
@@ -64,13 +61,7 @@ const styles = StyleSheet.create({
 
     justifyContent: 'space-evenly',
   },
-  checkButtons: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
-  icon: {
-    width: '100%',
-  },
+
   dot1: {
     color: '#F3DE21',
     fontSize: 60,
@@ -104,7 +95,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     textAlign: 'center',
   },
-  imageFooter: {
+  imageFooters: {
     position: 'absolute',
     bottom: -200,
 

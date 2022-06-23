@@ -8,9 +8,12 @@ const PageTwo = ({navigation}) => {
       <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.contents}>
         <View style={styles.imageContainers}>
-          <Image source={require('../images/page2.jpg')} style={styles.image} />
+          <Image
+            source={require('../images/page2.jpg')}
+            style={styles.images}
+          />
         </View>
-        <View style={styles.textContainer}>
+        <View style={styles.textContainers}>
           <Text style={styles.textHeader}>
             <Text style={styles.dot1}>Food</Text>
             <Text style={styles.dot2}>Mon</Text>
@@ -28,7 +31,7 @@ const PageTwo = ({navigation}) => {
           style={styles.icon}
         />
       </View>
-      <View style={styles.imageFooter}>
+      <View style={styles.imageFooters}>
         <Image source={require('../images/F2.png')} style={styles.imageRec1} />
       </View>
     </View>
@@ -37,38 +40,32 @@ const PageTwo = ({navigation}) => {
 const styles = StyleSheet.create({
   containers: {
     // flex: 1,
-    backgroundColor: '#1F453C',
-    // alignItems: 'center',
+    backgroundColor: '#03231c',
+    alignItems: 'center',
     height: '100%',
     overflow: 'hidden',
   },
-  imageContainer: {
+  imageContainers: {
     alignItems: 'center',
     borderRadius: 10,
     marginTop: '20%',
   },
-  image: {
+  images: {
     width: 350,
     height: 230,
     borderRadius: 10,
   },
-  textContainer: {
+  textContainers: {
     alignItems: 'center',
   },
 
-  content: {
+  contents: {
     height: 600,
     alignItems: 'center',
 
     justifyContent: 'space-evenly',
   },
-  checkButtons: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
-  icon: {
-    width: '100%',
-  },
+
   dot1: {
     color: '#F3DE21',
     fontSize: 60,
@@ -102,9 +99,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     textAlign: 'center',
   },
-  imageFooter: {
+  imageFooters: {
     position: 'absolute',
-    bottom: -190,
+    bottom: -170,
 
     left: -60,
     right: -10,
