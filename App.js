@@ -1,6 +1,7 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+
 import GreeterApp from './Onboarding/greetApp';
+
 import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
 const App = () => {
   const theme = {
@@ -15,9 +16,7 @@ const App = () => {
 
   return (
     <PaperProvider theme={theme}>
-      <NavigationContainer>
-        <GreeterApp />
-      </NavigationContainer>
+      <GreeterApp />
     </PaperProvider>
   );
 };
