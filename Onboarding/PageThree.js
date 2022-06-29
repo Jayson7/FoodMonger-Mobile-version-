@@ -20,9 +20,9 @@ const PageThree = ({navigation}) => {
         </View>
         <View style={styles.textContainer}>
           <Text style={styles.textHeader}>
-            <Text style={styles.dot1}> Food </Text>
-            <Text style={styles.dot2}> Mon </Text>
-            <Text style={styles.dot3}> Ger </Text>
+            <Text style={styles.dot1}>Food</Text>
+            <Text style={styles.dot2}>Mon</Text>
+            <Text style={styles.dot3}>Ger</Text>
           </Text>
           <Text style={styles.textSub}> Let us run the errand for you </Text>
           <Text style={styles.textSubMini}>
