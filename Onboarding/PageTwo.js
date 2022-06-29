@@ -91,6 +91,10 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: 'bold',
   },
+  icon: {
+    marginTop: '12%',
+    marginBottom: '12%',
+  },
   textSubMini: {
     fontFamily: 'Ubuntu',
     fontSize: 15,

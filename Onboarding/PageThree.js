@@ -24,7 +24,7 @@ const PageThree = ({navigation}) => {
             <Text style={styles.dot2}>Mon</Text>
             <Text style={styles.dot3}>Ger</Text>
           </Text>
-          <Text style={styles.textSub}> Let us run the errand for you</Text>
+          <Text style={styles.textSub}> Let us run the errand for you </Text>
           <Text style={styles.textSubMini}>
             A delivery suited to perfection just for you and you alone
           </Text>
@@ -102,7 +102,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginTop: 15,
     marginBottom: 10,
-
     color: '#fff',
     fontWeight: 'bold',
   },
@@ -127,9 +126,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     marginTop: '10%',
+    marginBottom: '5%',
   },
+
   buttonText1: {
-    backgroundColor: '#F3DE21',
+    backgroundColor: '#154d08',
     borderRadius: 10,
     paddingTop: 10,
     paddingBottom: 10,
@@ -155,6 +156,12 @@ const styles = StyleSheet.create({
     marginRight: 10,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  buttonText: {
+    fontFamily: 'Ubuntu',
+    fontSize: 20,
+    color: '#fff',
+    fontWeight: 'bold',
   },
 });
 
