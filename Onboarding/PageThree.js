@@ -1,7 +1,8 @@
 import {StyleSheet, StatusBar, Image, Text, View} from 'react-native';
 import React from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
-// import {RadioButton} from 'react-native-paper';
+
+// import Icon from 'react-native-vector-icons/FontAwesome';
+
 const PageThree = ({navigation}) => {
   return (
     <View style={styles.containers}>
@@ -21,12 +22,27 @@ const PageThree = ({navigation}) => {
             A delivery suited to perfection just for you and you alone
           </Text>
         </View>
-        <Icon
-          name="long-arrow-right"
-          size={50}
-          color="#F3DE21"
-          style={styles.icon}
-        />
+        <View style={styles.ButtonContainers}>
+          {/* button for authentication goes here */}
+
+          <Button
+            title={'React Native Elements'}
+            containerStyle={{
+              width: 200,
+              marginHorizontal: 50,
+              marginVertical: 10,
+            }}
+          />
+
+          <Button
+            title={'React Native Elements'}
+            containerStyle={{
+              width: 200,
+              marginHorizontal: 50,
+              marginVertical: 10,
+            }}
+          />
+        </View>
       </View>
       <View style={styles.imageFooter}>
         <Image source={require('../images/F3.png')} style={styles.imageRec1} />
