@@ -1,4 +1,11 @@
-import {StyleSheet, StatusBar, Image, Text, View} from 'react-native';
+import {
+  StyleSheet,
+  StatusBar,
+  Image,
+  Text,
+  View,
+  Pressable,
+} from 'react-native';
 import React from 'react';
 
 // import Icon from 'react-native-vector-icons/FontAwesome';
@@ -24,24 +31,20 @@ const PageThree = ({navigation}) => {
         </View>
         <View style={styles.ButtonContainers}>
           {/* button for authentication goes here */}
-
-          <Button
-            title={'React Native Elements'}
-            containerStyle={{
-              width: 200,
-              marginHorizontal: 50,
-              marginVertical: 10,
-            }}
-          />
-
-          <Button
-            title={'React Native Elements'}
-            containerStyle={{
-              width: 200,
-              marginHorizontal: 50,
-              marginVertical: 10,
-            }}
-          />
+          <View style={styles.buttonText1}>
+            <Pressable onPress={() => navigation.navigate('PageOne')}>
+              <View>
+                <Text style={styles.buttonText}> Login </Text>
+              </View>
+            </Pressable>
+          </View>
+          <View style={styles.buttonText2}>
+            <Pressable onPress={() => navigation.navigate('PageTwo')}>
+              <View>
+                <Text style={styles.buttonText}> Sign Up </Text>
+              </View>
+            </Pressable>
+          </View>
         </View>
       </View>
       <View style={styles.imageFooter}>
@@ -119,6 +122,39 @@ const styles = StyleSheet.create({
     right: -30,
 
     width: '100%',
+  },
+  ButtonContainers: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    marginTop: '10%',
+  },
+  buttonText1: {
+    backgroundColor: '#F3DE21',
+    borderRadius: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 40,
+    paddingRight: 40,
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: 10,
+    marginRight: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText2: {
+    backgroundColor: '#5B37E9',
+    borderRadius: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 40,
+    paddingRight: 40,
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: 10,
+    marginRight: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
