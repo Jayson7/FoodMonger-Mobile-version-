@@ -32,7 +32,7 @@ const PageThree = ({navigation}) => {
         <View style={styles.ButtonContainers}>
           {/* button for authentication goes here */}
           <View style={styles.buttonText1}>
-            <Pressable onPress={() => navigation.navigate('test')}>
+            <Pressable onPress={() => navigation.navigate('Login')}>
               <View>
                 <Text style={styles.buttonText}> Login </Text>
               </View>
