@@ -21,7 +21,10 @@ const App = () => {
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+          }}>
           <Stack.Screen name="GreeterApp" component={GreeterApp} />
           <Stack.Screen name="Login" component={Login} />
         </Stack.Navigator>
