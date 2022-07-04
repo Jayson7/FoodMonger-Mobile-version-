@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   },
   textSub: {
     fontFamily: 'Ubuntu',
-    fontSize: 20,
+    fontSize: 25,
     marginTop: 15,
     marginBottom: 10,
 
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   },
   textSubMini: {
     fontFamily: 'Ubuntu',
-    fontSize: 15,
+    fontSize: 17,
     color: '#fff',
     marginTop: 10,
     paddingHorizontal: 20,
@@ -104,9 +104,9 @@ const styles = StyleSheet.create({
   },
   imageFooters: {
     position: 'absolute',
-    bottom: -170,
+    bottom: -185,
 
-    left: -60,
+    left: -50,
     right: -10,
 
     width: '100%',
