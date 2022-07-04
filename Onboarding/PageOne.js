@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const PageOne = ({navigation}) => {
   return (
     <View style={styles.containers}>
-      <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.contents}>
         <View style={styles.imageContainers}>
           <Image
@@ -15,11 +14,11 @@ const PageOne = ({navigation}) => {
         </View>
         <View style={styles.textContainers}>
           <Text style={styles.textHeaders}>
-            <Text style={styles.dot1}> Food</Text>
+            <Text style={styles.dot1}>Food</Text>
             <Text style={styles.dot2}>Mon</Text>
             <Text style={styles.dot3}>Ger</Text>
           </Text>
-          <Text style={styles.textSub}>A table that satisfies your belly</Text>
+          <Text style={styles.textSub}>A table that satisfies your belly </Text>
           <Text style={styles.textSubMini}>
             Get meals ordered ro you at the right time when needed.
           </Text>
@@ -40,7 +39,7 @@ const PageOne = ({navigation}) => {
 const styles = StyleSheet.create({
   containers: {
     // flex: 1,
-    backgroundColor: '#17342d',
+    backgroundColor: '#0c1129',
     alignItems: 'center',
     height: '100%',
     overflow: 'hidden',
@@ -48,11 +47,13 @@ const styles = StyleSheet.create({
   imageContainers: {
     alignItems: 'center',
     borderRadius: 10,
+
     marginTop: '20%',
   },
   images: {
-    width: 350,
-    height: 230,
+    width: 390,
+    height: 270,
+
     borderRadius: 10,
   },
   textContainers: {
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   dot2: {
-    color: '#fff',
+    color: '#ffffff',
     fontSize: 60,
   },
   dot3: {
@@ -89,15 +90,16 @@ const styles = StyleSheet.create({
     fontFamily: 'Ubuntu',
     fontSize: 20,
     marginTop: 15,
+    color: 'white',
     marginBottom: 10,
 
-    color: '#fff',
     fontWeight: 'bold',
   },
   textSubMini: {
     fontFamily: 'Ubuntu',
     fontSize: 15,
-    color: '#fff',
+
+    color: 'white',
     marginTop: 10,
     paddingHorizontal: 20,
     textAlign: 'center',

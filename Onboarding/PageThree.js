@@ -14,7 +14,7 @@ const PageThree = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.containers}>
-      <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
+      <StatusBar barStyle="light-content" backgroundColor="#0c1129" />
       <View style={styles.content}>
         <View style={styles.imageContainer}>
           <Image source={require('../images/page3.jpg')} style={styles.image} />
@@ -40,7 +40,7 @@ const PageThree = () => {
             </Pressable>
           </View>
           <View style={styles.buttonText2}>
-            <Pressable onPress={() => navigation.navigate('test')}>
+            <Pressable onPress={() => navigation.navigate('Signup')}>
               <View>
                 <Text style={styles.buttonText}> Sign Up </Text>
               </View>
@@ -56,7 +56,7 @@ const PageThree = () => {
 };
 const styles = StyleSheet.create({
   containers: {
-    backgroundColor: '#0b1e1a',
+    backgroundColor: '#0c1129',
     alignItems: 'center',
     overflow: 'hidden',
     height: '100%',
@@ -67,8 +67,8 @@ const styles = StyleSheet.create({
     marginTop: '20%',
   },
   image: {
-    width: 350,
-    height: 230,
+    width: 390,
+    height: 270,
     borderRadius: 10,
   },
   textContainer: {
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
   },
 
   buttonText1: {
-    backgroundColor: '#154d08',
+    backgroundColor: '#3714ff',
     borderRadius: 10,
     paddingTop: 10,
     paddingBottom: 10,
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonText2: {
-    backgroundColor: '#5B37E9',
+    backgroundColor: '#d8c51e',
     borderRadius: 10,
     paddingTop: 10,
     paddingBottom: 10,

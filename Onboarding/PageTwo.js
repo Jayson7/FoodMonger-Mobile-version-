@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const PageTwo = ({navigation}) => {
   return (
     <View style={styles.containers}>
-      <StatusBar barStyle="light-content" backgroundColor="#1F453C" />
       <View style={styles.contents}>
         <View style={styles.imageContainers}>
           <Image
@@ -40,7 +39,7 @@ const PageTwo = ({navigation}) => {
 const styles = StyleSheet.create({
   containers: {
     // flex: 1,
-    backgroundColor: '#03231c',
+    backgroundColor: '#0c1129',
     alignItems: 'center',
     height: '100%',
     overflow: 'hidden',
@@ -51,8 +50,8 @@ const styles = StyleSheet.create({
     marginTop: '20%',
   },
   images: {
-    width: 350,
-    height: 230,
+    width: 390,
+    height: 270,
     borderRadius: 10,
   },
   textContainers: {

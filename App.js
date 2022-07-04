@@ -4,7 +4,7 @@ import GreeterApp from './Onboarding/greetApp';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from './authentication/login';
-
+import SignUp from './authentication/signup';
 import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -27,6 +27,7 @@ const App = () => {
           }}>
           <Stack.Screen name="GreeterApp" component={GreeterApp} />
           <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Signup" component={SignUp} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
