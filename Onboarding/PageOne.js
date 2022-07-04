@@ -8,7 +8,7 @@ const PageOne = ({navigation}) => {
       <View style={styles.contents}>
         <View style={styles.imageContainers}>
           <Image
-            source={require('../images/page1.jpg')}
+            source={require('../images/page1.png')}
             style={styles.images}
           />
         </View>
@@ -39,7 +39,7 @@ const PageOne = ({navigation}) => {
 const styles = StyleSheet.create({
   containers: {
     // flex: 1,
-    backgroundColor: '#0c1129',
+    backgroundColor: '#111d44',
     alignItems: 'center',
     height: '100%',
     overflow: 'hidden',
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
 
-    marginTop: '20%',
+    marginTop: '10%',
   },
   images: {
     width: 390,
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
   },
   textContainers: {
     alignItems: 'center',
+    marginTop: '10%',
   },
   icon: {
     marginTop: '10%',
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
     fontSize: 60,
   },
   dot3: {
-    color: '#5B37E9',
+    color: '#ffffff',
     fontSize: 60,
   },
   textSub: {

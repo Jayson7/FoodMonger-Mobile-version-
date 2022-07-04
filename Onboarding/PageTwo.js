@@ -8,7 +8,7 @@ const PageTwo = ({navigation}) => {
       <View style={styles.contents}>
         <View style={styles.imageContainers}>
           <Image
-            source={require('../images/page2.jpg')}
+            source={require('../images/page2.png')}
             style={styles.images}
           />
         </View>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   imageContainers: {
     alignItems: 'center',
     borderRadius: 10,
-    marginTop: '20%',
+    marginTop: '10%',
   },
   images: {
     width: 390,
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
   },
   textContainers: {
     alignItems: 'center',
+    marginTop: '10%',
   },
 
   contents: {
