@@ -39,7 +39,7 @@ const PageTwo = ({navigation}) => {
 const styles = StyleSheet.create({
   containers: {
     // flex: 1,
-    backgroundColor: '#0c1129',
+    backgroundColor: '#111d44',
     alignItems: 'center',
     height: '100%',
     overflow: 'hidden',
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     fontSize: 60,
   },
   dot3: {
-    color: '#5B37E9',
+    color: '#ffffff',
     fontSize: 60,
   },
   textSub: {

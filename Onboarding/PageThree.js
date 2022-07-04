@@ -14,10 +14,10 @@ const PageThree = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.containers}>
-      <StatusBar barStyle="light-content" backgroundColor="#0c1129" />
+      <StatusBar barStyle="light-content" backgroundColor="#111d44" />
       <View style={styles.content}>
         <View style={styles.imageContainer}>
-          <Image source={require('../images/page3.jpg')} style={styles.image} />
+          <Image source={require('../images/page3.png')} style={styles.image} />
         </View>
         <View style={styles.textContainer}>
           <Text style={styles.textHeader}>
@@ -56,7 +56,7 @@ const PageThree = () => {
 };
 const styles = StyleSheet.create({
   containers: {
-    backgroundColor: '#0c1129',
+    backgroundColor: '#111d44',
     alignItems: 'center',
     overflow: 'hidden',
     height: '100%',
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     alignItems: 'center',
     borderRadius: 10,
-    marginTop: '20%',
+    marginTop: '10%',
   },
   image: {
     width: 390,
@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     alignItems: 'center',
+    marginTop: '10%',
   },
 
   content: {
@@ -95,7 +96,7 @@ const styles = StyleSheet.create({
     fontSize: 60,
   },
   dot3: {
-    color: '#5B37E9',
+    color: '#ffffff',
     fontSize: 60,
   },
   textSub: {
@@ -138,8 +139,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingTop: 10,
     paddingBottom: 10,
-    paddingLeft: 40,
-    paddingRight: 40,
+    paddingLeft: 30,
+    paddingRight: 30,
     marginTop: 10,
     marginBottom: 10,
     marginLeft: 10,
@@ -152,8 +153,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingTop: 10,
     paddingBottom: 10,
-    paddingLeft: 40,
-    paddingRight: 40,
+    paddingLeft: 30,
+    paddingRight: 30,
     marginTop: 10,
     marginBottom: 10,
     marginLeft: 10,

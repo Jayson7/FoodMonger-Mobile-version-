@@ -21,22 +21,23 @@ const GreeterApp = () => {
             marginLeft: 5,
             marginRight: 5,
             marginTop: 3,
+
             marginBottom: 3,
-            backgroundColor: '#000000',
+            backgroundColor: '#f3efef',
           }}
         />
       }
       activeDot={
         <View
           style={{
-            width: 8,
-            height: 8,
+            width: 10,
+            height: 10,
             borderRadius: 4,
-            marginLeft: 3,
-            marginRight: 3,
+            marginLeft: 5,
+            marginRight: 5,
             marginTop: 3,
             marginBottom: 3,
-            backgroundColor: '#ffffff',
+            backgroundColor: '#556685',
           }}
         />
       }>
