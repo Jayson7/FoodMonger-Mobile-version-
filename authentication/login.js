@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
 export default function Login() {
+  const navigation = useNavigation();
   return (
     <KeyboardAwareScrollView
       style={{backgroundColor: '#061135'}}
@@ -71,8 +72,13 @@ export default function Login() {
           <View>
             <Text style={styles.forgotPassword}>Forgot Password?</Text>
           </View>
-          <View>
-            <Text style={styles.signUp}>Sign Up</Text>
+          <View style={styles.signupWrapper}>
+            <Text style={styles.signUp}>Don't have an account ?, </Text>
+            <Text
+              style={styles.signupText}
+              onPress={() => navigation.navigate('Signup')}>
+              Sign Up
+            </Text>
           </View>
         </View>
         {/* login screen inner component ends here */}
@@ -166,7 +172,7 @@ const styles = StyleSheet.create({
     fontFamily: 'sans-serif-condensed',
   },
   forgotPassword: {
-    color: '#beac03',
+    color: '#ffee00',
     fontSize: 15,
     fontWeight: 'bold',
     fontFamily: 'sans-serif-condensed',
@@ -174,10 +180,24 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   signUp: {
-    color: '#a6a80c',
+    color: '#ffffff',
+    fontSize: 15,
+
+    fontWeight: 'bold',
+
+    marginTop: '5%',
+    textAlign: 'center',
+  },
+  signupWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    fontFamily: 'Ubuntu',
+  },
+  signupText: {
+    color: '#075eff',
     fontSize: 15,
     fontWeight: 'bold',
-    fontFamily: 'sans-serif-condensed',
+
     marginTop: '5%',
     textAlign: 'center',
   },
