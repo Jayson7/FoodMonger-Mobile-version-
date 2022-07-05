@@ -5,7 +5,6 @@ export default function Login() {
   return (
     <View style={styles.loginContainer}>
       <StatusBar barStyle="light-content" backgroundColor="#ffffff" />
-      <Text> Login Please </Text>
     </View>
   );
 }
