@@ -52,6 +52,23 @@ export default function Signup() {
               autoCorrect={false}
             />
           </View>
+          {/* email */}
+          <View style={styles.Username}>
+            <Icon
+              name="user"
+              size={20}
+              color="#1e04b1"
+              style={styles.Username_icon}
+            />
+            <TextInput
+              style={styles.Usernameinput}
+              placeholder="Username"
+              placeholderTextColor="#050f2c"
+              autoCapitalize="none"
+              autoCorrect={false}
+            />
+          </View>
+          {/* email ends here */}
           <View style={styles.Password}>
             <Icon
               name="lock"
