@@ -17,46 +17,47 @@ export default function Login() {
       {/* status bar configuration */}
       <StatusBar barStyle="light-content" backgroundColor="#ffffff" />
       {/* login screen inner component */}
+
       <View>
         <Image
           source={require('../images/login.png')}
           style={styles.imageLogin}
         />
-        <View>
-          <Text style={styles.textLogin}>Login</Text>
+      </View>
+      <View>
+        <Text style={styles.textLogin}>Welcome Back</Text>
+      </View>
+      <View style={styles.loginSec}>
+        <View style={styles.Username}>
+          <Icon
+            name="user"
+            size={25}
+            color="#101292"
+            style={styles.Username_icon}
+          />
+          <TextInput
+            style={styles.Usernameinput}
+            placeholder="Username"
+            placeholderTextColor="#2d303b"
+            autoCapitalize="none"
+            autoCorrect={false}
+          />
         </View>
-        <View style={styles.loginSec}>
-          <View style={styles.Username}>
-            <Icon
-              name="user"
-              size={25}
-              color="#101292"
-              style={styles.Username_icon}
-            />
-            <TextInput
-              style={styles.Usernameinput}
-              placeholder="Username"
-              placeholderTextColor="#2d303b"
-              autoCapitalize="none"
-              autoCorrect={false}
-            />
-          </View>
-          <View style={styles.Password}>
-            <Icon
-              name="lock"
-              size={25}
-              color="#101292"
-              style={styles.Password_icon}
-            />
-            <TextInput
-              style={styles.PasswordInput}
-              placeholder="Password"
-              placeholderTextColor="#2d303b"
-              autoCapitalize="none"
-              autoCorrect={false}
-              secureTextEntry={true}
-            />
-          </View>
+        <View style={styles.Password}>
+          <Icon
+            name="lock"
+            size={25}
+            color="#101292"
+            style={styles.Password_icon}
+          />
+          <TextInput
+            style={styles.PasswordInput}
+            placeholder="Password"
+            placeholderTextColor="#2d303b"
+            autoCapitalize="none"
+            autoCorrect={false}
+            secureTextEntry={true}
+          />
         </View>
       </View>
       {/* login screen inner component ends here */}
@@ -71,23 +72,23 @@ const styles = StyleSheet.create({
   },
   imageLogin: {
     width: '100%',
-    height: '30%',
+    height: 250,
     resizeMode: 'contain',
   },
 
   loginSec: {
-    marginTop: '10%',
+    marginTop: 20,
     alignItems: 'center',
     backgroundColor: '#061135',
     height: '70%',
   },
   textLogin: {
-    color: '#000a35',
-    fontSize: 30,
+    color: '#186b08',
+    fontSize: 40,
     fontWeight: 'bold',
     marginTop: '10%',
     textAlign: 'center',
-    fontFamily: 'Roboto',
+    fontFamily: 'sans-serif-condensed',
   },
   Username: {
     alignItems: 'center',
