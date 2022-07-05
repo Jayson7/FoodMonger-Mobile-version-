@@ -69,7 +69,7 @@ export default function Login() {
             />
           </View>
           <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>Login</Text>
+            <Text style={styles.buttonText}>LOGIN</Text>
           </Pressable>
           <View>
             <Text style={styles.forgotPassword}>Forgot Password?</Text>
@@ -85,7 +85,9 @@ export default function Login() {
               style={styles.subtractImg2}
             />
           </View>
-
+          <View>
+            <Text style={styles.social}>Social Login</Text>
+          </View>
           <View style={styles.socialMedia}>
             <Icon
               name="facebook"
@@ -141,7 +143,7 @@ const styles = StyleSheet.create({
     color: '#0c267c',
     fontSize: 37,
     fontWeight: 'bold',
-    marginTop: '5%',
+    marginTop: '4%',
     fontFamily: 'Ubuntu',
   },
   textLoginMini: {
@@ -154,7 +156,7 @@ const styles = StyleSheet.create({
   Username: {
     alignItems: 'center',
     flexDirection: 'row',
-    marginTop: '10%',
+    marginTop: '9%',
     borderBottomWidth: 3,
     borderColor: '#0ba31f',
     borderRadius: 10,
@@ -179,7 +181,7 @@ const styles = StyleSheet.create({
   Password: {
     alignItems: 'center',
     flexDirection: 'row',
-    marginTop: '10%',
+    marginTop: '9%',
     borderBottomWidth: 3,
     borderColor: '#0ba31f',
     borderRadius: 10,
@@ -199,7 +201,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto',
   },
   button: {
-    marginTop: '10%',
+    marginTop: '9%',
     width: '55%',
     height: 52,
     borderRadius: 10,
@@ -209,7 +211,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#fbefff',
-    fontSize: 23,
+    fontSize: 20,
     fontWeight: 'bold',
     fontFamily: 'Ubuntu',
   },
@@ -218,14 +220,14 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: 'bold',
     fontFamily: 'Ubuntu',
-    marginTop: '7%',
+    marginTop: '6%',
     textAlign: 'center',
   },
   signUp: {
     color: '#16ad09',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
-    marginTop: '5%',
+    marginTop: '4%',
     textAlign: 'center',
     fontFamily: 'Ubuntu',
   },
@@ -235,11 +237,11 @@ const styles = StyleSheet.create({
     fontFamily: 'Ubuntu',
   },
   signupText: {
-    color: '#042180',
-    fontSize: 18,
+    color: '#cebb12',
+    fontSize: 16,
     fontWeight: 'bold',
 
-    marginTop: '5%',
+    marginTop: '4%',
     textAlign: 'center',
   },
   loginDivide: {
@@ -269,12 +271,20 @@ const styles = StyleSheet.create({
   },
   socialMedia: {
     flexDirection: 'row',
-    marginTop: '7%',
+    marginTop: '5%',
+  },
+  social: {
+    marginTop: '5%',
+    fontFamily: 'Ubuntu',
+    fontWeight: 'bold',
+    fontSize: 20,
+    color: '#b8b800',
   },
   social_icon: {
     marginHorizontal: 15,
     backgroundColor: '#082480',
     paddingHorizontal: 12,
+    borderRadius: 4,
     paddingVertical: 7,
   },
 });

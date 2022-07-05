@@ -8,15 +8,16 @@ import {
   StyleSheet,
   Pressable,
 } from 'react-native';
+
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
-export default function SignUp() {
+export default function Signup() {
   const navigation = useNavigation();
   return (
     <KeyboardAwareScrollView
-      style={{backgroundColor: '#061135'}}
+      style={{backgroundColor: '#fffbfb'}}
       resetScrollToCoords={{x: 0, y: 0}}
       contentContainerStyle={styles.container}
       scrollEnabled={true}>
@@ -24,6 +25,7 @@ export default function SignUp() {
         {/* status bar configuration */}
         <StatusBar barStyle="light-content" backgroundColor="#ffffff" />
         {/* login screen inner component */}
+
         <View>
           <Image
             source={require('../images/signup.png')}
@@ -32,67 +34,84 @@ export default function SignUp() {
         </View>
         <View style={styles.loginSec}>
           <View>
-            <Text style={styles.textSignup}> Create An Account </Text>
+            <Text style={styles.textLogin}>Hi!</Text>
+            <Text style={styles.textLoginMini}>Create a new account</Text>
           </View>
           <View style={styles.Username}>
             <Icon
               name="user"
-              size={25}
-              color="#101292"
+              size={20}
+              color="#1e04b1"
               style={styles.Username_icon}
             />
             <TextInput
               style={styles.Usernameinput}
               placeholder="Username"
-              placeholderTextColor="#2d303b"
+              placeholderTextColor="#050f2c"
               autoCapitalize="none"
               autoCorrect={false}
-            />
-          </View>
-          <View style={styles.Password}>
-            <Icon
-              name="at"
-              size={25}
-              color="#101292"
-              style={styles.Password_icon}
-            />
-
-            <TextInput
-              style={styles.PasswordInput}
-              placeholder="Email"
-              placeholderTextColor="#2d303b"
-              autoCapitalize="none"
-              autoCorrect={false}
-              secureTextEntry={true}
             />
           </View>
           <View style={styles.Password}>
             <Icon
               name="lock"
-              size={25}
-              color="#101292"
+              size={20}
+              color="#001da0"
               style={styles.Password_icon}
             />
-
             <TextInput
               style={styles.PasswordInput}
               placeholder="Password"
-              placeholderTextColor="#2d303b"
+              placeholderTextColor="#13096b"
               autoCapitalize="none"
               autoCorrect={false}
               secureTextEntry={true}
             />
           </View>
           <Pressable style={styles.button}>
-            <Text style={styles.buttonText}> Sign Up </Text>
+            <Text style={styles.buttonText}>Login</Text>
           </Pressable>
+          <View>
+            <Text style={styles.forgotPassword}>Forgot Password?</Text>
+          </View>
+          <View style={styles.loginDivide}>
+            <Image
+              source={require('../images/substract.png')}
+              style={styles.subtractImg}
+            />
+            <Text style={styles.or}>or</Text>
+            <Image
+              source={require('../images/substract.png')}
+              style={styles.subtractImg2}
+            />
+          </View>
 
+          <View style={styles.socialMedia}>
+            <Icon
+              name="facebook"
+              size={25}
+              color="#eccc13"
+              style={styles.social_icon}
+            />
+            <Icon
+              name="google"
+              size={25}
+              color="#eccc13"
+              style={styles.social_icon}
+            />
+            <Icon
+              name="twitter"
+              size={25}
+              color="#eccc13"
+              style={styles.social_icon}
+            />
+          </View>
           <View style={styles.signupWrapper}>
-            <Text style={styles.signUp}> Already have an account ?, </Text>
+            <Text style={styles.signUp}>Don't have an account ?, </Text>
             <Text
               style={styles.signupText}
-              onPress={() => navigation.navigate('Login')}>
-              Sign In
+              onPress={() => navigation.navigate('Signup')}>
+              Sign Up
             </Text>
           </View>
         </View>
@@ -108,36 +127,45 @@ const styles = StyleSheet.create({
   },
   imageLogin: {
     width: '100%',
-    height: 200,
+    height: 150,
     resizeMode: 'contain',
   },
 
   loginSec: {
-    marginTop: 10,
-    borderRadius: 20,
+    borderRadius: 30,
     alignItems: 'center',
-    backgroundColor: '#061135',
-    height: '80%',
+    backgroundColor: '#ffffff',
+    height: '100%',
   },
-  textSignup: {
-    color: '#eeff00',
-    fontSize: 30,
+  textLogin: {
+    color: '#0c267c',
+    fontSize: 37,
     fontWeight: 'bold',
-    marginTop: '3%',
-    textAlign: 'center',
+    marginTop: '5%',
+    marginLeft: '-15%',
+
     fontFamily: 'Ubuntu',
+  },
+  textLoginMini: {
+    color: '#090544',
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft: '-15%',
+
+    fontFamily: 'Ubuntu',
+    marginTop: '3%',
   },
   Username: {
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: '10%',
-    borderWidth: 3,
-    borderColor: '#929207',
+    borderBottomWidth: 3,
+    borderColor: '#0ba31f',
     borderRadius: 10,
-    width: '80%',
-    height: 50,
+    width: '70%',
+    height: 45,
     paddingHorizontal: '5%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fffbfb',
     marginHorizontal: '10%',
   },
   Username_icon: {
@@ -145,63 +173,65 @@ const styles = StyleSheet.create({
   },
 
   Usernameinput: {
-    fontSize: 15,
-
-    color: '#b3b6bb',
+    fontSize: 20,
+    color: '#1f0761',
     fontFamily: 'Roboto',
+    width: '100%',
+    paddingHorizontal: 10,
+    paddingVertical: -10,
   },
   Password: {
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: '10%',
-    borderWidth: 3,
-    borderColor: '#929207',
+    borderBottomWidth: 3,
+    borderColor: '#0ba31f',
     borderRadius: 10,
-    width: '80%',
-    height: 50,
+    width: '70%',
+    height: 45,
     paddingHorizontal: '5%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fffbfb',
     marginHorizontal: '10%',
   },
   Password_icon: {
     marginRight: '5%',
   },
   PasswordInput: {
-    fontSize: 15,
+    fontSize: 20,
     color: '#b3b6bb',
+    paddingHorizontal: 10,
     fontFamily: 'Roboto',
   },
   button: {
     marginTop: '10%',
-    width: '80%',
-    height: 50,
+    width: '55%',
+    height: 52,
     borderRadius: 10,
-    backgroundColor: '#dbcd07',
+    backgroundColor: '#d8b805',
     alignItems: 'center',
     justifyContent: 'center',
   },
   buttonText: {
-    color: '#000000',
-    fontSize: 20,
+    color: '#fbefff',
+    fontSize: 23,
     fontWeight: 'bold',
-    fontFamily: 'sans-serif-condensed',
+    fontFamily: 'Ubuntu',
   },
   forgotPassword: {
-    color: '#ffee00',
-    fontSize: 15,
+    color: '#1b7e07',
+    fontSize: 17,
     fontWeight: 'bold',
-    fontFamily: 'sans-serif-condensed',
-    marginTop: '5%',
+    fontFamily: 'Ubuntu',
+    marginTop: '7%',
     textAlign: 'center',
   },
   signUp: {
-    color: '#ffffff',
-    fontSize: 15,
-
+    color: '#16ad09',
+    fontSize: 18,
     fontWeight: 'bold',
-
     marginTop: '5%',
     textAlign: 'center',
+    fontFamily: 'Ubuntu',
   },
   signupWrapper: {
     flexDirection: 'row',
@@ -209,11 +239,46 @@ const styles = StyleSheet.create({
     fontFamily: 'Ubuntu',
   },
   signupText: {
-    color: '#075eff',
-    fontSize: 15,
+    color: '#042180',
+    fontSize: 18,
     fontWeight: 'bold',
 
     marginTop: '5%',
     textAlign: 'center',
+  },
+  loginDivide: {
+    height: 30,
+    marginTop: '3%',
+    width: '100%',
+    alignContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  subtractImg: {
+    width: '30%',
+    height: 3,
+    marginHorizontal: 10,
+  },
+  or: {
+    fontSize: 20,
+    color: '#deec0eff',
+    fontWeight: 'bold',
+    fontFamily: 'Ubuntu',
+  },
+  subtractImg2: {
+    width: '30%',
+    height: 3,
+    marginHorizontal: 10,
+  },
+  socialMedia: {
+    flexDirection: 'row',
+    marginTop: '7%',
+  },
+  social_icon: {
+    marginHorizontal: 15,
+    backgroundColor: '#082480',
+    paddingHorizontal: 12,
+    paddingVertical: 7,
   },
 });
