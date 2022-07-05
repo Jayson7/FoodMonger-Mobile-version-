@@ -8,6 +8,7 @@ import {
   StyleSheet,
   Pressable,
 } from 'react-native';
+
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
@@ -73,6 +74,18 @@ export default function Login() {
           <View>
             <Text style={styles.forgotPassword}>Forgot Password?</Text>
           </View>
+          <View style={styles.loginDivide}>
+            <Image
+              source={require('../images/substract.png')}
+              style={styles.subtractImg}
+            />
+            <Text style={styles.or}>or</Text>
+            <Image
+              source={require('../images/substract.png')}
+              style={styles.subtractImg2}
+            />
+          </View>
+
           <View style={styles.signupWrapper}>
             <Text style={styles.signUp}>Don't have an account ?, </Text>
             <Text
@@ -166,12 +179,12 @@ const styles = StyleSheet.create({
     width: '55%',
     height: 52,
     borderRadius: 10,
-    backgroundColor: '#052b94',
+    backgroundColor: '#cac701',
     alignItems: 'center',
     justifyContent: 'center',
   },
   buttonText: {
-    color: '#ffffff',
+    color: '#fbefff',
     fontSize: 23,
     fontWeight: 'bold',
     fontFamily: 'Ubuntu',
@@ -187,9 +200,7 @@ const styles = StyleSheet.create({
   signUp: {
     color: '#ffffff',
     fontSize: 15,
-
     fontWeight: 'bold',
-
     marginTop: '5%',
     textAlign: 'center',
   },
@@ -205,5 +216,22 @@ const styles = StyleSheet.create({
 
     marginTop: '5%',
     textAlign: 'center',
+  },
+  loginDivide: {
+    backgroundColor: 'white',
+    height: 40,
+    width: '100%',
+    alignContent: 'center',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  subtractImg: {
+    width: '30%',
+    height: 20,
+    marginHorizontal: 10,
+  },
+  or: {
+    fontSize: 20,
+    color: 'black',
   },
 });
