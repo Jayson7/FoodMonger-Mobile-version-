@@ -51,7 +51,7 @@ export default function SignUp() {
           </View>
           <View style={styles.Password}>
             <Icon
-              name="message"
+              name="at"
               size={25}
               color="#101292"
               style={styles.Password_icon}
@@ -84,17 +84,15 @@ export default function SignUp() {
             />
           </View>
           <Pressable style={styles.button}>
-            <Text style={styles.buttonText}> Login </Text>
+            <Text style={styles.buttonText}> Sign Up </Text>
           </Pressable>
-          <View>
-            <Text style={styles.forgotPassword}> Forgot Password ? </Text>
-          </View>
+
           <View style={styles.signupWrapper}>
-            <Text style={styles.signUp}> Don 't have an account ?, </Text>
+            <Text style={styles.signUp}> Already have an account ?, </Text>
             <Text
               style={styles.signupText}
-              onPress={() => navigation.navigate('Signup')}>
-              Sign Up
+              onPress={() => navigation.navigate('login')}>
+              Sign In
             </Text>
           </View>
         </View>
