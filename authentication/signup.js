@@ -91,7 +91,7 @@ export default function SignUp() {
             <Text style={styles.signUp}> Already have an account ?, </Text>
             <Text
               style={styles.signupText}
-              onPress={() => navigation.navigate('login')}>
+              onPress={() => navigation.navigate('Login')}>
               Sign In
             </Text>
           </View>

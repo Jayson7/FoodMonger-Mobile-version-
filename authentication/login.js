@@ -16,7 +16,7 @@ export default function Login() {
   const navigation = useNavigation();
   return (
     <KeyboardAwareScrollView
-      style={{backgroundColor: '#061135'}}
+      style={{backgroundColor: '#030c29'}}
       resetScrollToCoords={{x: 0, y: 0}}
       contentContainerStyle={styles.container}
       scrollEnabled={true}>
@@ -33,19 +33,20 @@ export default function Login() {
         </View>
         <View style={styles.loginSec}>
           <View>
-            <Text style={styles.textLogin}>Welcome Back</Text>
+            <Text style={styles.textLogin}>Welcome Back!</Text>
+            <Text style={styles.textLoginMini}>Sign in to continue</Text>
           </View>
           <View style={styles.Username}>
             <Icon
               name="user"
-              size={25}
-              color="#101292"
+              size={20}
+              color="#ffff07"
               style={styles.Username_icon}
             />
             <TextInput
               style={styles.Usernameinput}
               placeholder="Username"
-              placeholderTextColor="#2d303b"
+              placeholderTextColor="#ffffff"
               autoCapitalize="none"
               autoCorrect={false}
             />
@@ -53,14 +54,14 @@ export default function Login() {
           <View style={styles.Password}>
             <Icon
               name="lock"
-              size={25}
-              color="#101292"
+              size={20}
+              color="#ffff07"
               style={styles.Password_icon}
             />
             <TextInput
               style={styles.PasswordInput}
               placeholder="Password"
-              placeholderTextColor="#2d303b"
+              placeholderTextColor="#ffffff"
               autoCapitalize="none"
               autoCorrect={false}
               secureTextEntry={true}
@@ -93,36 +94,38 @@ const styles = StyleSheet.create({
   },
   imageLogin: {
     width: '100%',
-    height: 250,
+    height: 150,
     resizeMode: 'contain',
   },
 
   loginSec: {
-    marginTop: 20,
-    borderRadius: 20,
+    borderRadius: 30,
     alignItems: 'center',
-    backgroundColor: '#061135',
-    height: '70%',
+    backgroundColor: '#030c29',
+    height: '100%',
   },
   textLogin: {
-    color: '#929207',
-    fontSize: 40,
+    color: '#ffffff',
+    fontSize: 35,
     fontWeight: 'bold',
-    marginTop: '10%',
-    textAlign: 'center',
-    fontFamily: 'sans-serif-condensed',
+    marginTop: '5%',
+    fontFamily: 'Ubuntu',
+  },
+  textLoginMini: {
+    color: 'white',
+    fontSize: 16,
   },
   Username: {
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: '10%',
-    borderWidth: 3,
-    borderColor: '#929207',
+    borderBottomWidth: 3,
+    borderColor: '#ffff07',
     borderRadius: 10,
-    width: '80%',
-    height: 50,
+    width: '70%',
+    height: 45,
     paddingHorizontal: '5%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#030c29',
     marginHorizontal: '10%',
   },
   Username_icon: {
@@ -130,22 +133,24 @@ const styles = StyleSheet.create({
   },
 
   Usernameinput: {
-    fontSize: 15,
-
-    color: '#b3b6bb',
+    fontSize: 17,
+    color: '#ffffff',
     fontFamily: 'Roboto',
+    width: '100%',
+    paddingHorizontal: 10,
+    paddingVertical: -10,
   },
   Password: {
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: '10%',
-    borderWidth: 3,
-    borderColor: '#929207',
+    borderBottomWidth: 3,
+    borderColor: '#ffff07',
     borderRadius: 10,
-    width: '80%',
-    height: 50,
+    width: '70%',
+    height: 45,
     paddingHorizontal: '5%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#030c29',
     marginHorizontal: '10%',
   },
   Password_icon: {
@@ -157,26 +162,26 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto',
   },
   button: {
-    marginTop: '10%',
-    width: '80%',
-    height: 50,
+    marginTop: '7%',
+    width: '55%',
+    height: 52,
     borderRadius: 10,
-    backgroundColor: '#dbcd07',
+    backgroundColor: '#052b94',
     alignItems: 'center',
     justifyContent: 'center',
   },
   buttonText: {
-    color: '#000000',
-    fontSize: 20,
+    color: '#ffffff',
+    fontSize: 23,
     fontWeight: 'bold',
-    fontFamily: 'sans-serif-condensed',
+    fontFamily: 'Ubuntu',
   },
   forgotPassword: {
     color: '#ffee00',
-    fontSize: 15,
+    fontSize: 17,
     fontWeight: 'bold',
-    fontFamily: 'sans-serif-condensed',
-    marginTop: '5%',
+    fontFamily: 'Ubuntu',
+    marginTop: '3%',
     textAlign: 'center',
   },
   signUp: {
