@@ -17,7 +17,7 @@ export default function Login() {
   const navigation = useNavigation();
   return (
     <KeyboardAwareScrollView
-      style={{backgroundColor: '#030c29'}}
+      style={{backgroundColor: '#fffbfb'}}
       resetScrollToCoords={{x: 0, y: 0}}
       contentContainerStyle={styles.container}
       scrollEnabled={true}>
@@ -41,13 +41,13 @@ export default function Login() {
             <Icon
               name="user"
               size={20}
-              color="#ffff07"
+              color="#1e04b1"
               style={styles.Username_icon}
             />
             <TextInput
               style={styles.Usernameinput}
               placeholder="Username"
-              placeholderTextColor="#ffffff"
+              placeholderTextColor="#050f2c"
               autoCapitalize="none"
               autoCorrect={false}
             />
@@ -56,13 +56,13 @@ export default function Login() {
             <Icon
               name="lock"
               size={20}
-              color="#ffff07"
+              color="#001da0"
               style={styles.Password_icon}
             />
             <TextInput
               style={styles.PasswordInput}
               placeholder="Password"
-              placeholderTextColor="#ffffff"
+              placeholderTextColor="#13096b"
               autoCapitalize="none"
               autoCorrect={false}
               secureTextEntry={true}
@@ -114,31 +114,33 @@ const styles = StyleSheet.create({
   loginSec: {
     borderRadius: 30,
     alignItems: 'center',
-    backgroundColor: '#030c29',
+    backgroundColor: '#ffffff',
     height: '100%',
   },
   textLogin: {
-    color: '#ffffff',
+    color: '#0c267c',
     fontSize: 35,
     fontWeight: 'bold',
     marginTop: '5%',
     fontFamily: 'Ubuntu',
   },
   textLoginMini: {
-    color: 'white',
+    color: '#090544',
     fontSize: 16,
+    fontWeight: 'bold',
+    fontFamily: 'Ubuntu',
   },
   Username: {
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: '10%',
     borderBottomWidth: 3,
-    borderColor: '#ffff07',
+    borderColor: '#0ba31f',
     borderRadius: 10,
     width: '70%',
     height: 45,
     paddingHorizontal: '5%',
-    backgroundColor: '#030c29',
+    backgroundColor: '#fffbfb',
     marginHorizontal: '10%',
   },
   Username_icon: {
@@ -146,8 +148,8 @@ const styles = StyleSheet.create({
   },
 
   Usernameinput: {
-    fontSize: 17,
-    color: '#ffffff',
+    fontSize: 20,
+    color: '#1f0761',
     fontFamily: 'Roboto',
     width: '100%',
     paddingHorizontal: 10,
@@ -158,20 +160,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: '10%',
     borderBottomWidth: 3,
-    borderColor: '#ffff07',
+    borderColor: '#0ba31f',
     borderRadius: 10,
     width: '70%',
     height: 45,
     paddingHorizontal: '5%',
-    backgroundColor: '#030c29',
+    backgroundColor: '#fffbfb',
     marginHorizontal: '10%',
   },
   Password_icon: {
     marginRight: '5%',
   },
   PasswordInput: {
-    fontSize: 15,
+    fontSize: 20,
     color: '#b3b6bb',
+    paddingHorizontal: 10,
     fontFamily: 'Roboto',
   },
   button: {
@@ -179,7 +182,7 @@ const styles = StyleSheet.create({
     width: '55%',
     height: 52,
     borderRadius: 10,
-    backgroundColor: '#cac701',
+    backgroundColor: '#031c50',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -190,19 +193,20 @@ const styles = StyleSheet.create({
     fontFamily: 'Ubuntu',
   },
   forgotPassword: {
-    color: '#ffee00',
+    color: '#1b7e07',
     fontSize: 17,
     fontWeight: 'bold',
     fontFamily: 'Ubuntu',
-    marginTop: '3%',
+    marginTop: '5%',
     textAlign: 'center',
   },
   signUp: {
-    color: '#ffffff',
+    color: '#0f0cb4',
     fontSize: 15,
     fontWeight: 'bold',
     marginTop: '5%',
     textAlign: 'center',
+    fontFamily: 'Ubuntu',
   },
   signupWrapper: {
     flexDirection: 'row',
@@ -210,7 +214,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Ubuntu',
   },
   signupText: {
-    color: '#075eff',
+    color: '#2ea710',
     fontSize: 15,
     fontWeight: 'bold',
 
@@ -218,20 +222,26 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   loginDivide: {
-    backgroundColor: 'white',
-    height: 40,
+    height: 30,
+    marginTop: 5,
     width: '100%',
     alignContent: 'center',
-    flexDirection: 'column',
+    alignItems: 'center',
+    flexDirection: 'row',
     justifyContent: 'center',
   },
   subtractImg: {
     width: '30%',
-    height: 20,
+    height: 3,
     marginHorizontal: 10,
   },
   or: {
     fontSize: 20,
     color: 'black',
+  },
+  subtractImg2: {
+    width: '30%',
+    height: 3,
+    marginHorizontal: 10,
   },
 });
