@@ -30,10 +30,10 @@ export default function Login() {
             style={styles.imageLogin}
           />
         </View>
-        <View>
-          <Text style={styles.textLogin}>Welcome Back</Text>
-        </View>
         <View style={styles.loginSec}>
+          <View>
+            <Text style={styles.textLogin}>Welcome Back</Text>
+          </View>
           <View style={styles.Username}>
             <Icon
               name="user"
@@ -93,12 +93,13 @@ const styles = StyleSheet.create({
 
   loginSec: {
     marginTop: 20,
+    borderRadius: 20,
     alignItems: 'center',
     backgroundColor: '#061135',
     height: '70%',
   },
   textLogin: {
-    color: '#186b08',
+    color: '#929207',
     fontSize: 40,
     fontWeight: 'bold',
     marginTop: '10%',
