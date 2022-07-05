@@ -86,6 +86,26 @@ export default function Login() {
             />
           </View>
 
+          <View style={styles.socialMedia}>
+            <Icon
+              name="facebook"
+              size={25}
+              color="#eccc13"
+              style={styles.social_icon}
+            />
+            <Icon
+              name="google"
+              size={25}
+              color="#eccc13"
+              style={styles.social_icon}
+            />
+            <Icon
+              name="twitter"
+              size={25}
+              color="#eccc13"
+              style={styles.social_icon}
+            />
+          </View>
           <View style={styles.signupWrapper}>
             <Text style={styles.signUp}>Don't have an account ?, </Text>
             <Text
@@ -119,14 +139,14 @@ const styles = StyleSheet.create({
   },
   textLogin: {
     color: '#0c267c',
-    fontSize: 35,
+    fontSize: 37,
     fontWeight: 'bold',
     marginTop: '5%',
     fontFamily: 'Ubuntu',
   },
   textLoginMini: {
     color: '#090544',
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
     fontFamily: 'Ubuntu',
   },
@@ -182,7 +202,7 @@ const styles = StyleSheet.create({
     width: '55%',
     height: 52,
     borderRadius: 10,
-    backgroundColor: '#031c50',
+    backgroundColor: '#d8b805',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -201,8 +221,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   signUp: {
-    color: '#0f0cb4',
-    fontSize: 15,
+    color: '#16ad09',
+    fontSize: 18,
     fontWeight: 'bold',
     marginTop: '5%',
     textAlign: 'center',
@@ -214,8 +234,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Ubuntu',
   },
   signupText: {
-    color: '#2ea710',
-    fontSize: 15,
+    color: '#042180',
+    fontSize: 18,
     fontWeight: 'bold',
 
     marginTop: '5%',
@@ -237,11 +257,23 @@ const styles = StyleSheet.create({
   },
   or: {
     fontSize: 20,
-    color: 'black',
+    color: '#deec0eff',
+    fontWeight: 'bold',
+    fontFamily: 'Ubuntu',
   },
   subtractImg2: {
     width: '30%',
     height: 3,
     marginHorizontal: 10,
+  },
+  socialMedia: {
+    flexDirection: 'row',
+    marginTop: '7%',
+  },
+  social_icon: {
+    marginHorizontal: 15,
+    backgroundColor: '#082480',
+    paddingHorizontal: 12,
+    paddingVertical: 7,
   },
 });
