@@ -6,11 +6,12 @@ import {
   Text,
   StatusBar,
   StyleSheet,
+  Pressable,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
+
 export default function Login() {
   return (
     <KeyboardAwareScrollView
@@ -63,6 +64,15 @@ export default function Login() {
               autoCorrect={false}
               secureTextEntry={true}
             />
+          </View>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>Login</Text>
+          </Pressable>
+          <View>
+            <Text style={styles.forgotPassword}>Forgot Password?</Text>
+          </View>
+          <View>
+            <Text style={styles.signUp}>Sign Up</Text>
           </View>
         </View>
         {/* login screen inner component ends here */}
@@ -138,5 +148,36 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#b3b6bb',
     fontFamily: 'Roboto',
+  },
+  button: {
+    marginTop: '10%',
+    width: '80%',
+    height: 50,
+    borderRadius: 10,
+    backgroundColor: '#dbcd07',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    color: '#000000',
+    fontSize: 20,
+    fontWeight: 'bold',
+    fontFamily: 'sans-serif-condensed',
+  },
+  forgotPassword: {
+    color: '#beac03',
+    fontSize: 15,
+    fontWeight: 'bold',
+    fontFamily: 'sans-serif-condensed',
+    marginTop: '5%',
+    textAlign: 'center',
+  },
+  signUp: {
+    color: '#a6a80c',
+    fontSize: 15,
+    fontWeight: 'bold',
+    fontFamily: 'sans-serif-condensed',
+    marginTop: '5%',
+    textAlign: 'center',
   },
 });
