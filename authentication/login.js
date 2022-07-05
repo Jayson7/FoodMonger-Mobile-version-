@@ -149,6 +149,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     fontFamily: 'Ubuntu',
+    marginTop: '3%',
   },
   Username: {
     alignItems: 'center',
@@ -198,7 +199,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto',
   },
   button: {
-    marginTop: '7%',
+    marginTop: '10%',
     width: '55%',
     height: 52,
     borderRadius: 10,
@@ -217,7 +218,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: 'bold',
     fontFamily: 'Ubuntu',
-    marginTop: '5%',
+    marginTop: '7%',
     textAlign: 'center',
   },
   signUp: {
@@ -243,7 +244,7 @@ const styles = StyleSheet.create({
   },
   loginDivide: {
     height: 30,
-    marginTop: 5,
+    marginTop: '3%',
     width: '100%',
     alignContent: 'center',
     alignItems: 'center',
