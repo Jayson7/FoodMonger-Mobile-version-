@@ -102,7 +102,9 @@ export default function Signup() {
               style={styles.subtractImg2}
             />
           </View>
-
+          <View>
+            <Text style={styles.social}>Social Login</Text>
+          </View>
           <View style={styles.socialMedia}>
             <Icon
               name="facebook"
@@ -297,5 +299,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#082480',
     paddingHorizontal: 12,
     paddingVertical: 7,
+  },
+  social: {
+    marginTop: '5%',
+    fontFamily: 'Ubuntu',
+    fontWeight: 'bold',
+    fontSize: 20,
+    color: '#b8b800',
   },
 });
