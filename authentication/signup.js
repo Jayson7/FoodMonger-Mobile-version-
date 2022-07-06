@@ -156,9 +156,9 @@ const styles = StyleSheet.create({
   },
   textLogin: {
     color: '#0c267c',
-    fontSize: 37,
+    fontSize: 30,
     fontWeight: 'bold',
-    marginTop: '5%',
+    marginTop: '2%',
     marginLeft: '-15%',
 
     fontFamily: 'Ubuntu',
