@@ -47,11 +47,10 @@ const styles = StyleSheet.create({
   imageContainers: {
     alignItems: 'center',
     borderRadius: 10,
-
     marginTop: '10%',
   },
   images: {
-    width: 390,
+    width: 350,
     height: 270,
 
     borderRadius: 10,
@@ -73,7 +72,7 @@ const styles = StyleSheet.create({
 
   dot1: {
     color: '#F3DE21',
-    fontSize: 60,
+    fontSize: 45,
   },
   textHeaders: {
     fontWeight: 'bold',
@@ -81,16 +80,16 @@ const styles = StyleSheet.create({
   },
   dot2: {
     color: '#ffffff',
-    fontSize: 60,
+    fontSize: 40,
   },
   dot3: {
     color: '#ffffff',
-    fontSize: 60,
+    fontSize: 45,
   },
   textSub: {
     fontFamily: 'Ubuntu',
-    fontSize: 25,
-    marginTop: 15,
+    fontSize: 17,
+    marginTop: 5,
     color: 'white',
     marginBottom: 10,
 
